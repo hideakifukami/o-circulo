@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Círculo</title>
+    <!--Importação do CSS do Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Importação do CSS do Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Importação do CSS da AOS => https://github.com/michalsnik/aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center">
+    <div class="fixed-top mt-4 container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/header/logo.png" alt="Logotipo Amigos do Bairro">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Página Inicial</a></li>        
+          <li><a href="#about">O Círculo </a></li>
+          <li><a href="#disturbios">Principais Distúrbios</a></li>
+          <li><a href="#newsletter">Notícias</a></li>
+          <li><a href="#faq">FAQ</a></li>        
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
+  <main>
+    <!-- Carrossel com botão para modal -->
+    <section class="hero">
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <!--Uso da biblioteca AOS para animações-->
+              <h2 data-aos="fade-down" data-aos-duration="1000">O Círculo</h2>
+              <p data-aos="zoom-out">Permita-se embarcar em uma jornada de autocuidado, conhecimento e transformação que irá enriquecer sua mente e fortalecer seu espírito. Explore nosso conteúdo e torne-se parte dessa experiência única que visa impactar positivamente a vida de muitos.</p>                   
+              
+              <div id="videoModal" class="modal">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <!--<button type="button" class="close" data-dismiss="modal" onclick="closeModal()">
+                        <span>&times;</span>
+                      </button>-->
+                      <div class="video-container embed-responsive embed-responsive-16by9">
+                        <iframe width="100%" height="100%" src="" title="Amigos do Bairro" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay;" allowfullscreen class="embed-responsive-item" id="video-frame"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-item active" style="background-image: url(../assets/img/hero-carousel/hero-carousel-1.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../assets/img/hero-carousel/hero-carousel-4.jpg)"></div>
+        <div class="carousel-item" style="background-image: url(../assets/img/hero-carousel/hero-carousel-5.jpg)"></div>
+      </div>    
+    </section>
+  
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="../assets/img/about/about-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>Bem-vindo ao Círculo</h3>
+            <p class="fst-italic">
+              Um projeto dedicado a ampliar as informações sobre saúde mental e promover o bem-estar emocional de todos. Inspirados pela forma harmônica e infinita do círculo, acreditamos que o conhecimento e o suporte são essenciais para criar uma comunidade mais saudável e conectada.
+            </p>
+            <p>
+              O círculo, com sua forma perfeita e contínua, simboliza a nossa missão de oferecer um espaço onde todos podem encontrar apoio, aprender e crescer sem fim. Assim como o círculo não tem início nem fim, acreditamos que o cuidado com a saúde mental deve ser contínuo e integrativo, abrangendo todas as fases da vida e todas as esferas do ser humano.
+            </p>            
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+      
+    <section class="about">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 order-1" data-aos="fade-left" data-aos-delay="100">
+            <img src="../assets/img/about/about-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 content" data-aos="fade-right" data-aos-delay="100">            
+            <p class="fst-italic">
+              O Círculo foi criado para ser um refúgio de compreensão e ajuda, onde informações confiáveis e práticas sobre saúde mental estão sempre ao seu alcance. Oferecemos recursos detalhados sobre diferentes aspectos da saúde mental, como ansiedade, depressão, estresse e autocuidado, para ajudar você a entender e enfrentar os desafios emocionais de maneira mais eficaz.
+            </p>
+            <p>
+              Nosso objetivo é quebrar estigmas, fomentar diálogos abertos e oferecer ferramentas práticas para o autocuidado e a melhoria do bem-estar mental. Através de artigos informativos, dicas úteis, técnicas de relaxamento e histórias inspiradoras, queremos que você se sinta acolhido e fortalecido em cada etapa da sua jornada.
+            </p>                  
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- Paralax com forms em modal-->
+    <section id="disturbios" class="disturbios">
+      <div class="container" data-aos="zoom-out">
+        <div class="text-center">
+          <h3  class="tittle-line">Principais Distúrbios Mentais</h3>
+          <p>Descubra informações essenciais sobre os diversos tipos de distúrbios mentais, suas causas, sintomas e opções de tratamento. Aprofunde seu conhecimento e saiba como reconhecer e lidar com essas condições para promover uma vida mais saudável e equilibrada.</p>
+          <a class="disturbios-btn" href="./disturbios/disturbios.html">Clique aqui e saiba mais!</a>
+        </div>
+      </div>
+    </section>    
+    
+    <!-- Notícias -->
+    <section id="newsletter" class="newsletter recent-blog-posts">
+      <div class="container" data-aos="zoom-out">
+        <div class="section-title" data-aos="zoom-out">
+          <h2 class="text-white">Feed</h2>
+          <p>Notícias</p>
+        </div>
+
+        <div class="row gy-5">
+          <div class="col-xl-4 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../assets/img/blog/post-1/foto-1.jpg" class="img-fluid" alt="">
+                <span class="post-date">Maio 27</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">A Importância da Saúde Mental na América Latina</h3>
+                <p>Desafios e Soluções sobre o avanço da saúde mental na América Latina.</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Hideaki Fukami</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Saúde</span>
+                  </div>
+                </div>
+
+                <hr>
+
+                <a href="blog/blog-post-1.html" class="readmore stretched-link"><span>Leia Mais</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+            </div>
+          </div><!-- Fim Item Postagem -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../assets/img/blog/post-2/foto-1.jpg" class="img-fluid" alt="">
+                <span class="post-date">Junho 02</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Má saúde mental:</h3>
+                <p>Um obstáculo ao desenvolvimento da América Latina.</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Hideaki Fukami</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Saúde</span>
+                  </div>
+                </div>
+
+                <hr>
+
+                <a href="blog/blog-post-2.html" class="readmore stretched-link"><span>Leia Mais</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+            </div>
+          </div><!-- Fim Item Postagem -->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-out" data-aos-delay="100">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../assets/img/blog/post-3/foto-1.jpg" class="img-fluid" alt="">
+                <span class="post-date">Junho 09</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Depressão:</h3>
+                <p>Um Desafio para a Saúde Mental na América Latina.</p>
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">Hideaki Fukami</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Saúde</span>
+                  </div>
+                </div>
+
+                <hr>
+
+                <a href="blog/blog-post-3.html" class="readmore stretched-link"><span>Leia Mais</span><i
+                    class="bi bi-arrow-right"></i></a>
+
+              </div>
+            </div>
+          </div><!-- Fim Item Postagem -->
+        </div>
+      </div>
+    </section>
+    <!-- Fim Notícias -->
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>F.A.Q</h2>
+          <p>Perguntas Frequentes</p>
+        </div>
+
+        <ul class="faq-list" data-aos="zoom-out">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">O que é saúde mental?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Saúde mental refere-se ao bem-estar emocional, psicológico e social de uma pessoa. Ela afeta como pensamos, sentimos e agimos ao lidar com a vida. Também determina como lidamos com o estresse, nos relacionamos com os outros e fazemos escolhas.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">O que são transtornos mentais?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Transtornos mentais são condições que afetam o pensamento, o humor e o comportamento de uma pessoa. Exemplos incluem depressão, transtorno bipolar, esquizofrenia, ansiedade e transtornos alimentares.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">O que causa transtornos mentais?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Os transtornos mentais podem ser causados por uma combinação de fatores genéticos, biológicos, ambientais e psicológicos. Não há uma única causa, e diferentes pessoas podem desenvolver um transtorno mental por razões distintas.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Quais são os sintomas comuns de um transtorno mental?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Os sintomas variam de acordo com o transtorno, mas podem incluir: Mudanças de humor intensas, Pensamentos negativos persistentes, Dificuldade de concentração, Alterações no apetite ou peso, Problemas de sono, Sentimentos de tristeza, desespero ou inutilidade, Isolamento social e 
+                Pensamentos suicidas
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Como posso saber se estou com um transtorno mental?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Se você está experimentando sintomas persistentes que interferem no seu dia a dia, é importante procurar ajuda de um profissional de saúde mental, como um psicólogo ou psiquiatra, para uma avaliação adequada.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Quais são os tratamentos para transtornos mentais?
+              <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Os tratamentos podem incluir terapia (como terapia cognitivo-comportamental ou terapia interpessoal), medicamentos (como antidepressivos ou ansiolíticos) e, em alguns casos, tratamentos combinados. A escolha do tratamento depende do transtorno específico e das necessidades individuais.
+              </p>
+            </div>
+          </li>          
+        </ul>
+      </div>
+    </section>
+    <!-- Fim FAQ -->
+
+  </main>
+    
+    <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">    
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="developers">
+          &copy; Copyright <strong><span>O Círculo</span></strong>.
+          <p class="mt-3">O Círculo declara, para todos os fins de Direito que, todas as suas fotografias, vídeos e outras produções audiovisuais que envolvam suas imagens, logotipos ou quaisquer signos distintivos minimamente identificáveis são de sua exclusiva propriedade, não sendo permitida a utilização, por qualquer terceiro, independentemente da finalidade e meio escolhido, sem a prévia e expressa autorização.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+        
+  <script src="../assets/js/script.js"></script>
+  <!--Importação do JS do Youtube-->
+  <script src="https://www.youtube.com/player_api"></script>
+  <!--Importação do JS do Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!--Importação do JS da AOS => https://github.com/michalsnik/aos-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
